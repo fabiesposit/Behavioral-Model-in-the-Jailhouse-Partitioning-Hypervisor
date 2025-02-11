@@ -1,0 +1,4 @@
+Booting non root cell
+Verified condition! Injection...
+Guest error: -1.
+Workload done

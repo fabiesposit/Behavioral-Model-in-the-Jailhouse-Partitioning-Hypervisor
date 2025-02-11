@@ -1,0 +1,67 @@
+
+Initializing Jailhouse hypervisor v0.12 (289-gb6019359-dirty) on CPU 3
+Code location: 0xfffffffff0000050
+Using x2APIC
+Page pool usage after early setup: mem 47/974, remap 0/131072
+Initializing processors:
+ CPU 3... (APIC ID 3) OK
+ CPU 2... (APIC ID 2) OK
+ CPU 0... (APIC ID 0) OK
+ CPU 1... (APIC ID 1) OK
+Initializing unit: VT-d
+DMAR unit @0xfed90000/0x1000
+Reserving 24 interrupt(s) for device ff:00.0 at index 0
+Initializing unit: IOAPIC
+Initializing unit: Cache Allocation Technology
+Initializing unit: PCI
+Adding PCI device 00:01.0 to cell "QEMU-VM"
+Adding PCI device 00:02.0 to cell "QEMU-VM"
+Reserving 5 interrupt(s) for device 00:02.0 at index 24
+Adding PCI device 00:1b.0 to cell "QEMU-VM"
+Reserving 1 interrupt(s) for device 00:1b.0 at index 29
+Adding PCI device 00:1f.0 to cell "QEMU-VM"
+Adding PCI device 00:1f.2 to cell "QEMU-VM"
+Reserving 1 interrupt(s) for device 00:1f.2 at index 30
+Adding PCI device 00:1f.3 to cell "QEMU-VM"
+Adding PCI device 00:1f.7 to cell "QEMU-VM"
+Reserving 2 interrupt(s) for device 00:1f.7 at index 31
+Adding virtual PCI device 00:0c.0 to cell "QEMU-VM"
+Adding virtual PCI device 00:0d.0 to cell "QEMU-VM"
+Adding virtual PCI device 00:0e.0 to cell "QEMU-VM"
+Adding virtual PCI device 00:0f.0 to cell "QEMU-VM"
+Page pool usage after late setup: mem 270/974, remap 65543/131072
+Activating hypervisor
+CPU 0: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+CPU 0: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+CPU 1: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+CPU 1: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+CPU 1: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+CPU 2: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+Adding virtual PCI device 00:0c.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Adding virtual PCI device 00:0d.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Adding virtual PCI device 00:0e.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Adding virtual PCI device 00:0f.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Created cell "linux-x86-demo"
+Page pool usage after cell creation: mem 361/974, remap 65543/131072
+Cell "linux-x86-demo" can be loaded
+Started cell "linux-x86-demo"
+CPU 3 received SIPI, vector 100
+FATAL: VM-Entry failure, reason 33
+qualification 0
+vectoring info: 0 interrupt info: 0
+RIP: 0x0000200000000055 RSP: 0x0000000000000000 FLAGS: 6
+RAX: 0x0000000080010001 RBX: 0x0000000000000000 RCX: 0x00000000c0000080
+RDX: 0x0000000000000000 RSI: 0x0000000000000000 RDI: 0x0000000000000000
+CS: 8 BASE: 0x0000000000000000 AR-BYTES: c09b EFER.LMA 1
+CR0: 0x0000000080010031 CR3: 0x0000000000005000 CR4: 0x0000000000002020
+EFER: 0x0000000000000500
+Parking CPU 3 (Cell: "linux-x86-demo")
+CPU 2: Unknown hypercall 10, RIP: 0xffffffff8103f2d3

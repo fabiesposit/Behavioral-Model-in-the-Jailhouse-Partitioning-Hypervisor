@@ -1,0 +1,201 @@
+flowchart
+
+1a1([CPUID])
+1a2([CPUID])
+1a3([CPUID])
+1a4([CPUID])
+1a6([CPUID])
+1a8([CPUID])
+1d1([CPUID])
+1d2([CPUID])
+1d3([CPUID])
+1f1([CPUID])
+1f2([CPUID])
+2a4([CR_ACCESS])
+2a5([CR_ACCESS])
+2a7([CR_ACCESS])
+2a8([CR_ACCESS])
+2c([CR_ACCESS])
+2e([CR_ACCESS])
+2f1([CR_ACCESS])
+2f2([CR_ACCESS])
+3a1([EPT_VIOLATION])
+3a6([EPT_VIOLATION])
+4a1([IO_INSTRUCTION])
+4a8([IO_INSTRUCTION])
+5a4([MSR_READ])
+5a5([MSR_READ])
+5a7([MSR_READ])
+5c([MSR_READ])
+6a1([MSR_WRITE])
+6a5([MSR_WRITE])
+6a7([MSR_WRITE])
+6c([MSR_WRITE])
+7a4([XSETBV])
+7a6([XSETBV])
+7d3([XSETBV])
+8a1([EXCEPTION_NMI])
+8b([EXCEPTION_NMI])
+9b([PREEMPTION_TIMER])
+10a1([VMCALL])
+
+
+subgraph Real-Address-Mode
+subgraph B
+8b-->9b
+end
+end
+
+subgraph Protected-Mode
+subgraph A
+
+subgraph A1
+1a1<-->6a1
+6a1<-->4a1
+6a1<-->3a1
+6a1<-->10a1
+6a1-->8a1
+
+end
+
+
+subgraph A2
+1a2
+end
+
+subgraph A3
+1a3
+end
+
+subgraph A4
+7a4-->1a4
+1a4-->5a4
+5a4-->2a4
+end
+
+subgraph A5
+5a5<-->6a5
+6a5-->2a5
+end
+
+
+subgraph A6
+3a6<-->7a6
+3a6-->1a6
+end
+
+subgraph A7
+5a7-->6a7
+6a7-->2a7
+end
+
+subgraph A8
+4a8<-->1a8
+1a8-->2a8
+end
+
+end
+
+
+
+
+subgraph C
+5c-->6c
+6c-->2c
+end
+
+subgraph D
+subgraph D1
+1d1
+end
+
+subgraph D2
+1d2
+end
+
+subgraph D3
+1d3<-->7d3
+end
+end
+
+subgraph E
+2e
+end
+
+subgraph F
+subgraph F1
+1f1-->2f1
+end
+
+subgraph F2
+1f2-->2f2
+end
+end
+
+end
+Bootstrap-..->6a1
+
+8a1-->8b
+1a2-->1a3
+1a3-->7a4
+5a4-->3a6
+2a4-->5a5
+2a5-->5a4
+1a6-->1a8
+2a7-->1a8
+2a8-->5a7
+9b-->5c
+2c-->1d1
+1d1-->1d2
+1d2-->1d3
+1d3-->2e
+2e-->1f1
+2f1-->1f2
+2f2-->1a2
+
+linkStyle 0 stroke: yellow
+linkStyle 1 stroke: yellow
+linkStyle 2 stroke: yellow
+linkStyle 3 stroke: yellow
+linkStyle 4 stroke: yellow
+linkStyle 5 stroke: yellow
+linkStyle 6 stroke: yellow
+linkStyle 7 stroke: yellow
+linkStyle 8 stroke: yellow
+linkStyle 9 stroke: yellow
+linkStyle 10 stroke: yellow
+linkStyle 11 stroke: yellow
+linkStyle 12 stroke: yellow
+linkStyle 13 stroke: yellow
+linkStyle 14 stroke: yellow
+linkStyle 15 stroke: yellow
+linkStyle 16 stroke: yellow
+linkStyle 17 stroke: yellow
+linkStyle 18 stroke: yellow
+linkStyle 19 stroke: yellow
+linkStyle 20 stroke: yellow
+linkStyle 21 stroke: yellow
+linkStyle 22 stroke: cyan
+
+linkStyle 23 stroke: red
+
+linkStyle 24 stroke: blue
+
+linkStyle 25 stroke: blue
+linkStyle 26 stroke: blue
+linkStyle 27 stroke: blue
+linkStyle 28 stroke: blue
+linkStyle 29 stroke: blue
+linkStyle 30 stroke: blue
+linkStyle 31 stroke: blue
+
+linkStyle 32 stroke: red
+linkStyle 33 stroke: red
+linkStyle 34 stroke: blue
+linkStyle 35 stroke: blue
+
+linkStyle 36 stroke: red
+linkStyle 37 stroke: red
+
+linkStyle 38 stroke: blue
+linkStyle 39 stroke: red

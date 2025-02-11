@@ -1,0 +1,122 @@
+Dec 15 02:25:32 test kernel: [22769.336204] [TRACE_KVM] Buffer & to_replay created
+Dec 15 02:25:32 test kernel: [22769.336242] [HAVFUZZ] Opened
+Dec 15 02:26:02 test kernel: [22799.416932] [TRACE_KVM] The trarget vcpu is 3
+Dec 15 02:26:02 test kernel: [22799.487352] [Trace KVM] Buffer reset
+Dec 15 02:26:02 test kernel: [22799.487360] [TRACE_KVM] Buffer size changed
+Dec 15 02:26:02 test kernel: [22799.487367] [TRACE_KVM] From_exit set to 0 and exit_before buffer created.
+Dec 15 02:26:02 test kernel: [22799.487369] [TRACE_KVM] gran exit set to 0.
+Dec 15 02:26:02 test kernel: [22799.487370] [TRACE_KVM] Control_execution set to 1.
+Dec 15 02:26:02 test kernel: [22799.487372] [TRACE_KVM] tracing enabled
+Dec 15 02:26:02 test kernel: [22799.491789] 0, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.491919] 1, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.504848] 2, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.509416] 3, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.509558] 4, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.509587] 5, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.509620] 6, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.509676] 7, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.509705] 8, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.512453] 9, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.512490] 10, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.512518] 11, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.529715] 12, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.529748] 13, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.529775] 14, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.529800] 15, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.529827] 16, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.529854] 17, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.529881] 18, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.530230] 19, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.530259] 20, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.530285] 21, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.552843] 22, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.585059] 23, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.619548] 24, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.660872] 25, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.744972] 26, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.750514] 27, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.760848] 28, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.762760] 29, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.763127] 30, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.763619] 31, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.780847] 32, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.781502] 33, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.812987] 34, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.853725] 35, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.866826] 36, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.867479] 37, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.869955] 38, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.885898] 39, L1: 1.
+Dec 15 02:26:02 test kernel: [22799.924937] 40, L1: 1.
+Dec 15 02:26:03 test kernel: [22799.957494] 41, L1: 1.
+Dec 15 02:26:03 test kernel: [22799.957870] 42, L1: 1.
+Dec 15 02:26:03 test kernel: [22799.970855] 43, L1: 1.
+Dec 15 02:26:03 test kernel: [22799.971262] 44, L1: 1.
+Dec 15 02:26:03 test kernel: [22799.974072] 45, L1: 1.
+Dec 15 02:26:03 test kernel: [22799.975239] 46, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.008088] 47, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.052447] 48, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.052485] 49, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.052515] 50, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.052543] 51, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.052570] 52, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.052597] 53, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.052624] 54, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.053258] 55, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.053287] 56, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.053315] 57, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.132846] 58, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.132895] 59, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.133005] 60, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.133034] 61, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.144606] 62, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.220844] 63, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.236312] 64, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.256844] 65, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.361836] 66, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.397089] 67, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.397390] 68, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.397657] 69, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.440706] 70, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.477010] 71, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.479425] 72, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.612089] 73, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.668942] 74, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.697540] 75, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.764987] 76, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.820019] 77, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.888120] 78, L1: 1.
+Dec 15 02:26:03 test kernel: [22800.889871] 79, L1: 1.
+Dec 15 02:26:04 test kernel: [22800.993132] 80, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.013012] 81, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.109034] 82, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.153097] 83, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.153151] 84, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.186052] 85, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.212085] 86, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.212312] 87, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.212484] 88, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.248982] 89, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.249100] 90, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.249149] 91, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.249193] 92, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.249237] 93, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.249281] 94, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.249325] 95, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.265125] 96, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.308697] 97, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.323217] 98, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.372992] 99, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.387218] 100, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.512298] 101, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.544960] 102, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.580870] 103, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.580955] [Hermes] Exit Field [681e] -> Value [80036]. Reason: [1f].
+Dec 15 02:26:04 test kernel: [22801.580969] 104, L1: 1.
+Dec 15 02:26:04 test kernel: [22801.580971] [Hermes] Entry Field [681e] -> Value [80038].
+Dec 15 02:26:04 test kernel: [22801.617656] 105, L1: 1.
+Dec 15 02:26:07 test kernel: [22804.584275] [TRACE_KVM] tracing disabled
+Dec 15 02:26:07 test kernel: [22804.584280] [TRACE_KVM] Control_execution set to 0.
+Dec 15 02:26:07 test kernel: [22804.584569] [TRACE_KVM] Buffer copied 
+Dec 15 02:26:07 test kernel: [22804.586989] [HAVFUZZ] Released
+Dec 15 02:26:07 test kernel: [22804.588410] [Trace KVM] Buffer released

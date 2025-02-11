@@ -1,0 +1,2 @@
+Detected unknown state at exit #190. (state: A1, exit reason: MSR_READ)
+Detected unknown state at exit #192. (state: B, exit reason: TRIPLE_FAULT)

@@ -1,0 +1,6 @@
+nexits: 3
+folderpath: /home/test/hermes_fi/meta_boot_31/boot/CR_ACCESS/boot_681e/bit_6/rep_0
+reason: 28
+field: 26654
+bit: 6
+state: 0x31

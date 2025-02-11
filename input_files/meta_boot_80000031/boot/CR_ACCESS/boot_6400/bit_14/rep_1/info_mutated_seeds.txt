@@ -1,0 +1,6 @@
+nexits: 7
+folderpath: /home/test/hermes_fi/meta_boot_80000031/boot/CR_ACCESS/boot_6400/bit_14/rep_1
+reason: 28
+field: 25600
+bit: 14
+state: 0x80000031

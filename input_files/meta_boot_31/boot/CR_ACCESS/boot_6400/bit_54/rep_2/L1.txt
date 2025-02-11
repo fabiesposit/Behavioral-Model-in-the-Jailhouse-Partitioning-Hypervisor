@@ -1,0 +1,193 @@
+
+Initializing Jailhouse hypervisor v0.12 (289-gb6019359-dirty) on CPU 3
+Code location: 0xfffffffff0000050
+Using x2APIC
+Page pool usage after early setup: mem 47/974, remap 0/131072
+Initializing processors:
+ CPU 3... (APIC ID 3) OK
+ CPU 2... (APIC ID 2) OK
+ CPU 1... (APIC ID 1) OK
+ CPU 0... (APIC ID 0) OK
+Initializing unit: VT-d
+DMAR unit @0xfed90000/0x1000
+Reserving 24 interrupt(s) for device ff:00.0 at index 0
+Initializing unit: IOAPIC
+Initializing unit: Cache Allocation Technology
+Initializing unit: PCI
+Adding PCI device 00:01.0 to cell "QEMU-VM"
+Adding PCI device 00:02.0 to cell "QEMU-VM"
+Reserving 5 interrupt(s) for device 00:02.0 at index 24
+Adding PCI device 00:1b.0 to cell "QEMU-VM"
+Reserving 1 interrupt(s) for device 00:1b.0 at index 29
+Adding PCI device 00:1f.0 to cell "QEMU-VM"
+Adding PCI device 00:1f.2 to cell "QEMU-VM"
+Reserving 1 interrupt(s) for device 00:1f.2 at index 30
+Adding PCI device 00:1f.3 to cell "QEMU-VM"
+Adding PCI device 00:1f.7 to cell "QEMU-VM"
+Reserving 2 interrupt(s) for device 00:1f.7 at index 31
+Adding virtual PCI device 00:0c.0 to cell "QEMU-VM"
+Adding virtual PCI device 00:0d.0 to cell "QEMU-VM"
+Adding virtual PCI device 00:0e.0 to cell "QEMU-VM"
+Adding virtual PCI device 00:0f.0 to cell "QEMU-VM"
+Page pool usage after late setup: mem 270/974, remap 65543/131072
+Activating hypervisor
+CPU 2: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+CPU 1: Unknown hypercall 10, RIP: 0xffffffff8103f2d3
+Adding virtual PCI device 00:0c.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Adding virtual PCI device 00:0d.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Adding virtual PCI device 00:0e.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Adding virtual PCI device 00:0f.0 to cell "linux-x86-demo"
+Shared memory connection established, peer cells:
+ "QEMU-VM"
+Created cell "linux-x86-demo"
+Page pool usage after cell creation: mem 361/974, remap 65543/131072
+Cell "linux-x86-demo" can be loaded
+Started cell "linux-x86-demo"
+CPU 3 received SIPI, vector 100
+[    0.000000] Linux version 5.3.18giorgio (root@test) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #11 SMP PREEMPT Wed Nov 8 22:09:26 UTC 2023 ()
+[    0.000000] Command line: console=ttyS0,115200
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x00000000000fffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x0000000000100fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000200000-0x00000000048fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] extended physical RAM map:
+[    0.000000] reserve setup_data: [mem 0x0000000000000000-0x0000000000001fff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000000002000-0x000000000000212b] usable
+[    0.000000] reserve setup_data: [mem 0x000000000000212c-0x00000000000fffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000000100000-0x0000000000100fff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000000200000-0x00000000048fffff] usable
+[    0.000000] DMI not present or invalid.
+[    0.000000] Hypervisor detected: Jailhouse
+[    0.000000] tsc: Detected 3691.013 MHz processor
+[    0.000087] last_pfn = 0x4900 max_arch_pfn = 0x400000000
+[    0.000331] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.000417] x2apic: enabled by BIOS, switching to x2apic ops
+[    0.021042] Using GB pages for direct mapping
+[    0.021176] RAMDISK: [mem 0x03b5a000-0x04536fff]
+[    0.021371] Zone ranges:
+[    0.021373]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.021374]   DMA32    [mem 0x0000000001000000-0x00000000048fffff]
+[    0.021375]   Normal   empty
+[    0.021376] Movable zone start for each node
+[    0.021377] Early memory node ranges
+[    0.021378]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+[    0.021379]   node   0: [mem 0x0000000000200000-0x00000000048fffff]
+[    0.022224] Zeroed struct page in unavailable ranges: 14433 pages
+[    0.022226] Initmem setup node 0 [mem 0x0000000000001000-0x00000000048fffff]
+[    0.022759] Setting APIC routing to physical x2apic.
+[    0.023731] IOAPIC[0]: apic_id 0, version 32, address 0xfec00000, GSI 0-23
+[    0.023733] TSC deadline timer available
+[    0.023736] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+[    0.023745] [mem 0x04900000-0xffffffff] available for PCI devices
+[    0.023746] Booting paravirtualized kernel on bare hardware
+[    0.023748] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.106342] setup_percpu: NR_CPUS:96 nr_cpumask_bits:96 nr_cpu_ids:1 nr_node_ids:1
+[    0.107591] percpu: Embedded 50 pages/cpu s166488 r8192 d30120 u2097152
+[    0.107615] Built 1 zonelists, mobility grouping on.  Total pages: 18061
+[    0.107617] Kernel command line: console=ttyS0,115200
+[    0.107710] Dentry cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.107745] Inode-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.108074] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.108265] Memory: 38112K/73340K available (10244K kernel code, 1325K rwdata, 2440K rodata, 1248K init, 1152K bss, 35228K reserved, 0K cma-reserved)
+[    0.108570] Kernel/User page tables isolation: enabled
+[    0.108971] rcu: Preemptible hierarchical RCU implementation.
+[    0.108973] rcu: 	RCU event tracing is enabled.
+[    0.108974] rcu: 	RCU restricting CPUs from NR_CPUS=96 to nr_cpu_ids=1.
+[    0.108975] 	Tasks RCU enabled.
+[    0.108975] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.108976] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.110728] NR_IRQS: 6400, nr_irqs: 256, preallocated irqs: 0
+[    0.110790] random: get_random_bytes called from start_kernel+0x352/0x535 with crng_init=0
+[    0.110963] Console: colour dummy device 80x25
+[    0.265010] printk: console [ttyS0] enabled
+[    0.265934] APIC: Switch to symmetric I/O mode setup
+[    0.276827] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x6a6856e63fd, max_idle_ns: 881590655550 ns
+[    0.279191] Calibrating delay loop (skipped), value calculated using timer frequency.. 7382.02 BogoMIPS (lpj=14764052)
+[    0.281506] pid_max: default: 32768 minimum: 301
+[    0.282640] LSM: Security Framework initializing
+[    0.283186] SELinux:  Initializing.
+[    0.283186] Mount-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.283186] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.283186] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[    0.283186] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.283186] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.283186] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.283186] Spectre V2 : Mitigation: Full generic retpoline
+[    0.283186] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.283186] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.283186] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.283186] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[    0.283186] MDS: Mitigation: Clear CPU buffers
+[    0.283186] Freeing SMP alternatives memory: 32K
+[    0.283186] smpboot: CPU 0 Converting physical 3 to logical package 0
+[    0.283186] smpboot: CPU0: Intel(R) Xeon(R) CPU E5-1620 v2 @ 3.70GHz (family: 0x6, model: 0x3e, stepping: 0x4)
+[    0.303200] Performance Events: IvyBridge events, full-width counters, Intel PMU driver.
+[    0.305045] ... version:                2
+[    0.305946] ... bit width:              48
+[    0.306849] ... generic registers:      4
+[    0.307196] ... value mask:             0000ffffffffffff
+[    0.308370] ... max period:             00007fffffffffff
+[    0.309546] ... fixed-purpose events:   3
+[    0.310432] ... event mask:             000000070000000f
+[    0.319195] rcu: Hierarchical SRCU implementation.
+[    0.335194] smp: Bringing up secondary CPUs ...
+[    0.336215] smp: Brought up 1 node, 1 CPU
+[    0.337117] smpboot: Max logical packages: 1
+[    0.338061] smpboot: Total of 1 processors activated (7382.02 BogoMIPS)
+[    0.339528] devtmpfs: initialized
+[    0.340463] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.342588] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.343246] xor: automatically using best checksumming function   avx       
+[    0.344934] NET: Registered protocol family 16
+[    0.345960] audit: initializing netlink subsys (disabled)
+[    0.347319] audit: type=2000 audit(0.068:1): state=initialized audit_enabled=0 res=1
+[    0.351199] cpuidle: using governor ladder
+[    0.352136] cpuidle: using governor menu
+[    0.353080] PCI: Using configuration type 1 for base access
+[    0.354316] PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xb0000000-0xbfffffff] (base 0xb0000000)
+[    0.355215] core: PMU erratum BJ122, BV98, HSD29 workaround disabled, HT off
+[    0.415198] raid6: sse2x4   gen() 15212 MB/s
+[    0.463194] raid6: sse2x4   xor() 10492 MB/s
+[    0.511199] raid6: sse2x2   gen() 12264 MB/s
+[    0.559192] raid6: sse2x2   xor()  8379 MB/s
+[    0.607192] raid6: sse2x1   gen() 10435 MB/s
+[    0.655195] raid6: sse2x1   xor()  7310 MB/s
+[    0.656156] raid6: using algorithm sse2x4 gen() 15212 MB/s
+[    0.657371] raid6: .... xor() 10492 MB/s, rmw enabled
+[    0.658504] raid6: using ssse3x2 recovery algorithm
+[    0.659230] ACPI: Interpreter disabled.
+[    0.660181] SCSI subsystem initialized
+[    0.663255] vgaarb: loaded
+[    0.663928] usbcore: registered new interface driver usbfs
+[    0.665156] usbcore: registered new interface driver hub
+[    0.666398] usbcore: registered new device driver usb
+[    0.667226] PCI: Probing PCI hardware
+[    0.668077] PCI host bridge to bus 0000:00
+[    0.668997] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.670597] pci_bus 0000:00: root bus resource [mem 0x00000000-0xffffffffff]
+[    0.671192] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    0.679123] pci 0000:00:0c.0: [110a:4106] type 00 class 0xff8002
+[    0.679983] pci 0000:00:0c.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    0.681640] pci 0000:00:0c.0: reg 0x14: [mem 0x00000000-0x00000fff]
+[    0.686723] pci 0000:00:0d.0: [110a:4106] type 00 class 0xff8003
+[    0.687945] pci 0000:00:0d.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    0.689604] pci 0000:00:0d.0: reg 0x14: [mem 0x00000000-0x00000fff]
+[    0.694923] pci 0000:00:0e.0: [110a:4106] type 00 class 0xff0000
+[    0.695945] pci 0000:00:0e.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    0.697730] pci 0000:00:0e.0: reg 0x14: [mem 0x00000000-0x00000fff]
+[    0.702845] pci 0000:00:0f.0: [110a:4106] type 00 class 0xff0001
+[    0.704063] pci 0000:00:0f.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    0.705739] pci 0000:00:0f.0: reg 0x14: [mem 0x00000000-0x00000fff]
+[    0.717960] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 00
